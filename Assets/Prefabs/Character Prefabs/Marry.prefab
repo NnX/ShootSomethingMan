@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1676703808, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1940654426450688, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee, type: 3}
       propertyPath: m_Name
       value: Marry

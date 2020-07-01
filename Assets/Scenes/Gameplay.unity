@@ -121,72 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &83323127 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 83323127, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676703806}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &83323128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83323127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433644a97703bdb429c749bc88570a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultConfig:
-    typeControl: 0
-    typeWeapon: 0
-    damage: 0
-    criticalDamage: 0
-    fireRate: 0
-    criticalRate: 0
-  nameWp: 0
-  gunIndex: 0
-  currentBullet: 0
-  bulletMax: 0
-  spawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  fx_shot: {fileID: 0}
-  fx_bulletFall: {fileID: 0}
---- !u!1 &103382686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 103382686, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676703806}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &103382687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103382686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433644a97703bdb429c749bc88570a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultConfig:
-    typeControl: 0
-    typeWeapon: 0
-    damage: 0
-    criticalDamage: 0
-    fireRate: 0
-    criticalRate: 0
-  nameWp: 0
-  gunIndex: 0
-  currentBullet: 0
-  bulletMax: 0
-  spawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  fx_shot: {fileID: 0}
-  fx_bulletFall: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,72 +204,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1074197369 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1074197369, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676703806}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1074197370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074197369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433644a97703bdb429c749bc88570a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultConfig:
-    typeControl: 0
-    typeWeapon: 0
-    damage: 0
-    criticalDamage: 0
-    fireRate: 0
-    criticalRate: 0
-  nameWp: 0
-  gunIndex: 0
-  currentBullet: 0
-  bulletMax: 0
-  spawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  fx_shot: {fileID: 0}
-  fx_bulletFall: {fileID: 0}
---- !u!1 &1660195268 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1660195268, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676703806}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1660195269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660195268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433644a97703bdb429c749bc88570a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultConfig:
-    typeControl: 0
-    typeWeapon: 0
-    damage: 0
-    criticalDamage: 0
-    fireRate: 0
-    criticalRate: 0
-  nameWp: 0
-  gunIndex: 0
-  currentBullet: 0
-  bulletMax: 0
-  spawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  fx_shot: {fileID: 0}
-  fx_bulletFall: {fileID: 0}
 --- !u!1001 &1676703806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -343,6 +211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1676703812, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee, type: 3}
+      propertyPath: defaultConfig.typeWeapon
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1940654426450688, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee, type: 3}
       propertyPath: m_Name
       value: Tommy
@@ -391,27 +263,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5781192970742348492, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
+        type: 3}
+      propertyPath: weaponsUnlocked.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee, type: 3}
 --- !u!1 &1676703807 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4972820264836107407, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
+  m_CorrespondingSourceObject: {fileID: 1940654426450688, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
     type: 3}
   m_PrefabInstance: {fileID: 1676703806}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1676703808 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7782464566364008393, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676703806}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1676703809 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8714393693008751601, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676703806}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1676703810
+--- !u!114 &1676703827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -420,108 +285,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1676703807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433644a97703bdb429c749bc88570a2a, type: 3}
+  m_Script: {fileID: 11500000, guid: b4a81a95edb33b0489d533c04acd7d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultConfig:
-    typeControl: 0
-    typeWeapon: 0
-    damage: 0
-    criticalDamage: 0
-    fireRate: 0
-    criticalRate: 0
-  nameWp: 0
-  gunIndex: 0
-  currentBullet: 0
-  bulletMax: 0
-  spawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  fx_shot: {fileID: 0}
-  fx_bulletFall: {fileID: 0}
---- !u!114 &1676703811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676703808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433644a97703bdb429c749bc88570a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultConfig:
-    typeControl: 0
-    typeWeapon: 0
-    damage: 0
-    criticalDamage: 0
-    fireRate: 0
-    criticalRate: 0
-  nameWp: 0
-  gunIndex: 0
-  currentBullet: 0
-  bulletMax: 0
-  spawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  fx_shot: {fileID: 0}
-  fx_bulletFall: {fileID: 0}
---- !u!114 &1676703812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676703809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433644a97703bdb429c749bc88570a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultConfig:
-    typeControl: 0
-    typeWeapon: 0
-    damage: 0
-    criticalDamage: 0
-    fireRate: 0
-    criticalRate: 0
-  nameWp: 0
-  gunIndex: 0
-  currentBullet: 0
-  bulletMax: 0
-  spawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  fx_shot: {fileID: 0}
-  fx_bulletFall: {fileID: 0}
---- !u!1 &1936644389 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1936644389, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676703806}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1936644390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936644389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433644a97703bdb429c749bc88570a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultConfig:
-    typeControl: 0
-    typeWeapon: 0
-    damage: 0
-    criticalDamage: 0
-    fireRate: 0
-    criticalRate: 0
-  nameWp: 0
-  gunIndex: 0
-  currentBullet: 0
-  bulletMax: 0
-  spawnPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  fx_shot: {fileID: 0}
-  fx_bulletFall: {fileID: 0}
+  canShoot: 0

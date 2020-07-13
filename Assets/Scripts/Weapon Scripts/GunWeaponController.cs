@@ -15,7 +15,24 @@ public class GunWeaponController : WeaponController
 
     void Start()
     {
-        
+
+        if(!GameplayController.instance.bullet_And_BulletFX_Created)
+        {
+            GameplayController.instance.bullet_And_BulletFX_Created = true;
+            if (nameWp != NameWeapon.FIRE && nameWp != NameWeapon.ROCKET)
+            {
+                SmartPool.instance.CreateBulletAndBulletFall(bulletPrefab, fx_bulletFall, 100);
+            }
+        }
+
+        if (!GameplayController.instance.rocket_Bullet_Created)
+        {
+            if(nameWp == NameWeapon.ROCKET)
+            {
+                GameplayController.instance.rocket_Bullet_Created = true;
+                SmartPool.instance.CreateRocket(bulletPrefab, 100);
+            }
+        }
     }
 
     public override void ProcessAttack()
@@ -43,7 +60,21 @@ public class GunWeaponController : WeaponController
                 break;
         }
 
-        ///SPAWN Bullet
+        if((transform != null) && (nameWp != NameWeapon.FIRE))
+        {
+            if(nameWp != NameWeapon.ROCKET)
+            {
+                GameObject bullet_Fall_FX = SmartPool.instance.SpawnBulletFallFx(spawnPoint.transform.position, Quaternion.identity);
+                bullet_Fall_FX.transform.localScale = (transform.root.eulerAngles.y > 1.0f) ? new Vector3(-1f,1f,1f) : new Vector3(1f,1f,1f);
+
+                StartCoroutine(WaitForShootEffect());
+            }
+
+            SmartPool.instance.SPawnBullet(spawnPoint.transform.position, new Vector3(-transform.root.localScale.x, 0f, 0f), spawnPoint.rotation, nameWp);
+        } else
+        {
+            StartCoroutine(ActiveFireCollider());
+        }
     } // process attack
 
     IEnumerator WaitForShootEffect()
@@ -55,11 +86,13 @@ public class GunWeaponController : WeaponController
 
     IEnumerator ActiveFireCollider()
     {
-        fireCollider.enabled = true;
+
+        fx_shot.Play();
+        //fireCollider.enabled = true;
 
         yield return fire_ColliderWait;
 
-        fireCollider.enabled = false;
+        //fireCollider.enabled = false;
     }
 
 

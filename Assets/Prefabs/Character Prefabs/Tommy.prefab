@@ -106,9 +106,11 @@ MonoBehaviour:
   currentBullet: 0
   bulletMax: 210
   spawnPoint: {fileID: 2140239084}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3466540231215572576, guid: 623ddd7fb68190c42979eb93959c5e5e,
+    type: 3}
   fx_shot: {fileID: 198882520460706316}
-  fx_bulletFall: {fileID: 0}
+  fx_bulletFall: {fileID: 1477688336886712, guid: 4e1badf5c7bd740bdb8f828d99509eb3,
+    type: 3}
 --- !u!1 &103382686
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,9 +217,11 @@ MonoBehaviour:
   currentBullet: 0
   bulletMax: 10
   spawnPoint: {fileID: 2140239084}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 4664602618386556822, guid: 3b031ae856ee29146977cc97c3602b87,
+    type: 3}
   fx_shot: {fileID: 198882520460706316}
-  fx_bulletFall: {fileID: 0}
+  fx_bulletFall: {fileID: 1477688336886712, guid: 4e1badf5c7bd740bdb8f828d99509eb3,
+    type: 3}
 --- !u!1 &777862714
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,9 +610,11 @@ MonoBehaviour:
   currentBullet: 0
   bulletMax: 160
   spawnPoint: {fileID: 915085240}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3466540231215572576, guid: 623ddd7fb68190c42979eb93959c5e5e,
+    type: 3}
   fx_shot: {fileID: 198614468358206224}
-  fx_bulletFall: {fileID: 0}
+  fx_bulletFall: {fileID: 1477688336886712, guid: 4e1badf5c7bd740bdb8f828d99509eb3,
+    type: 3}
 --- !u!1 &1774500683
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,9 +752,11 @@ MonoBehaviour:
   currentBullet: 0
   bulletMax: 120
   spawnPoint: {fileID: 2140239084}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3466540231215572576, guid: 623ddd7fb68190c42979eb93959c5e5e,
+    type: 3}
   fx_shot: {fileID: 198882520460706316}
-  fx_bulletFall: {fileID: 0}
+  fx_bulletFall: {fileID: 1477688336886712, guid: 4e1badf5c7bd740bdb8f828d99509eb3,
+    type: 3}
 --- !u!1 &2140239083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1536,8 @@ GameObject:
   - component: {fileID: 1174724438}
   - component: {fileID: 4170105527774605610}
   - component: {fileID: 5781192970742348492}
-  m_Layer: 0
+  - component: {fileID: 1676703827}
+  m_Layer: 8
   m_Name: Tommy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1664,6 +1673,19 @@ MonoBehaviour:
   - {fileID: 1676703810}
   - {fileID: 997230754974783095}
   currentWeapon: {fileID: 0}
+--- !u!114 &1676703827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940654426450688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a81a95edb33b0489d533c04acd7d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canShoot: 0
 --- !u!1 &1966007364148674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,9 +1983,11 @@ MonoBehaviour:
   currentBullet: 0
   bulletMax: 15
   spawnPoint: {fileID: 915085240}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3466540231215572576, guid: 623ddd7fb68190c42979eb93959c5e5e,
+    type: 3}
   fx_shot: {fileID: 198614468358206224}
-  fx_bulletFall: {fileID: 0}
+  fx_bulletFall: {fileID: 1477688336886712, guid: 4e1badf5c7bd740bdb8f828d99509eb3,
+    type: 3}
 --- !u!1 &8714393693008751601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,7 +2084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultConfig:
     typeControl: 0
-    typeWeapon: 1
+    typeWeapon: 2
     damage: 3
     criticalDamage: 3
     fireRate: 0.3
@@ -2070,9 +2094,11 @@ MonoBehaviour:
   currentBullet: 0
   bulletMax: 120
   spawnPoint: {fileID: 915085240}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3466540231215572576, guid: 623ddd7fb68190c42979eb93959c5e5e,
+    type: 3}
   fx_shot: {fileID: 198614468358206224}
-  fx_bulletFall: {fileID: 0}
+  fx_bulletFall: {fileID: 1477688336886712, guid: 4e1badf5c7bd740bdb8f828d99509eb3,
+    type: 3}
 --- !u!1001 &1002453218
 PrefabInstance:
   m_ObjectHideFlags: 0

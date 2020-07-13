@@ -204,6 +204,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &954698365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954698366}
+  - component: {fileID: 954698367}
+  m_Layer: 0
+  m_Name: Gameplay Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &954698366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954698365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.735464, y: -0.7037787, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &954698367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954698365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd54ed80a1fa1a40a12f3cba556e6f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet_And_BulletFX_Created: 0
+  rocket_Bullet_Created: 0
 --- !u!1001 &1676703806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -211,10 +256,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1676703812, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee, type: 3}
-      propertyPath: defaultConfig.typeWeapon
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1940654426450688, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee, type: 3}
       propertyPath: m_Name
       value: Tommy
@@ -263,29 +304,48 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5781192970742348492, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-        type: 3}
-      propertyPath: weaponsUnlocked.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee, type: 3}
---- !u!1 &1676703807 stripped
+--- !u!1 &1945750582
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1940654426450688, guid: 0cad9a424eb1f5c418fc4f8f36fbbdee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1676703806}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1676703827
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945750583}
+  - component: {fileID: 1945750584}
+  m_Layer: 0
+  m_Name: SmartPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1945750583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945750582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945750584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676703807}
+  m_GameObject: {fileID: 1945750582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4a81a95edb33b0489d533c04acd7d8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 49e8204d8a2ea864f83c58eaa8a5722c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canShoot: 0

@@ -2,35 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SmartPool : MonoBehaviour
-{
+public class SmartPool : MonoBehaviour {
 
     public static SmartPool instance;
     private List<GameObject> bullet_Fall_Fx = new List<GameObject>();
     private List<GameObject> bullet_Prefabs = new List<GameObject>();
     private List<GameObject> bullet_Rocket_Prefabs = new List<GameObject>();
-    private void Awake()
-    {
+    private void Awake() {
         MakeInstance();
     }
 
-    void MakeInstance()
-    {
-        if(instance == null)
-        {
+    void MakeInstance() {
+        if (instance == null) {
             instance = this;
         }
     }
 
-    private void OnDisable()
-    {
+    private void OnDisable() {
         instance = null;
     }
 
-    public void CreateBulletAndBulletFall(GameObject bullet, GameObject bulletFall, int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
+    public void CreateBulletAndBulletFall(GameObject bullet, GameObject bulletFall, int count) {
+        for (int i = 0; i < count; i++) {
             GameObject temp_Bullet = Instantiate(bullet);
             GameObject temp_Bullet_Fall = Instantiate(bulletFall);
 
@@ -39,12 +32,11 @@ public class SmartPool : MonoBehaviour
 
             bullet_Prefabs[i].SetActive(false);
             bullet_Fall_Fx[i].SetActive(false);
-        } 
+        }
     }
 
     public void CreateRocket(GameObject rocket, int count) {
-        for (int i = 0; i < count; i++)
-        {
+        for (int i = 0; i < count; i++) {
             GameObject temp_Rocket_Bullet = Instantiate(rocket);
 
             bullet_Rocket_Prefabs.Add(temp_Rocket_Bullet);
@@ -52,13 +44,10 @@ public class SmartPool : MonoBehaviour
         }
     }
 
-    public GameObject SpawnBulletFallFx(Vector3 position, Quaternion rotation)
-    {
+    public GameObject SpawnBulletFallFx(Vector3 position, Quaternion rotation) {
 
-        for (int i = 0; i < bullet_Fall_Fx.Count; i++)
-        {
-            if(!bullet_Fall_Fx[i].activeInHierarchy)
-            {
+        for (int i = 0; i < bullet_Fall_Fx.Count; i++) {
+            if (!bullet_Fall_Fx[i].activeInHierarchy) {
                 bullet_Fall_Fx[i].SetActive(true);
                 bullet_Fall_Fx[i].transform.position = position;
                 bullet_Fall_Fx[i].transform.rotation = rotation;
@@ -69,36 +58,58 @@ public class SmartPool : MonoBehaviour
         return null;
     }
 
-    public void SPawnBullet(Vector3 position, Vector3 direction, Quaternion rotation, NameWeapon weaponName)
-    {
-        if(weaponName != NameWeapon.ROCKET)
-        {
-            for (int i = 0; i < bullet_Prefabs.Count; i++)
-            {
-                if(!bullet_Prefabs[i].activeInHierarchy)
-                {
+    public void SPawnBullet(Vector3 position, Vector3 direction, Quaternion rotation, NameWeapon weaponName) {
+        if (weaponName != NameWeapon.ROCKET) {
+            for (int i = 0; i < bullet_Prefabs.Count; i++) {
+                if (!bullet_Prefabs[i].activeInHierarchy) {
                     bullet_Prefabs[i].SetActive(true);
                     bullet_Prefabs[i].transform.position = position;
                     bullet_Prefabs[i].transform.rotation = rotation;
 
+                    bullet_Prefabs[i].GetComponent<BulletController>().SetDirection(direction);
+
+                    SetBulletDamage(weaponName, bullet_Prefabs[i]);
+
                     break;
                 }
             }
-        } else
-        {
-            for (int i = 0; i < bullet_Rocket_Prefabs.Count; i++)
-            {
-                if (!bullet_Rocket_Prefabs[i].activeInHierarchy)
-                {
+        } else {
+            for (int i = 0; i < bullet_Rocket_Prefabs.Count; i++) {
+                if (!bullet_Rocket_Prefabs[i].activeInHierarchy) {
                     bullet_Rocket_Prefabs[i].SetActive(true);
                     bullet_Rocket_Prefabs[i].transform.position = position;
                     bullet_Rocket_Prefabs[i].transform.rotation = rotation;
 
+                    bullet_Rocket_Prefabs[i].GetComponent<BulletController>().SetDirection(direction);
 
+                    SetBulletDamage(weaponName, bullet_Rocket_Prefabs[i]);
 
                     break;
                 }
-            } 
+            }
+        }
+    }
+
+    void SetBulletDamage(NameWeapon weaponName, GameObject bullet) {
+        switch (weaponName) {
+            case NameWeapon.PISTOL:
+            bullet.GetComponent<BulletController>().damage = 2;
+            break;
+            case NameWeapon.AK:
+            bullet.GetComponent<BulletController>().damage = 5;
+            break;
+            case NameWeapon.M3:
+            bullet.GetComponent<BulletController>().damage = 4;
+            break;
+            case NameWeapon.ROCKET:
+            bullet.GetComponent<BulletController>().damage = 10;
+            break;
+            case NameWeapon.AWP:
+            bullet.GetComponent<BulletController>().damage = 10;
+            break;
+            case NameWeapon.MP5:
+            bullet.GetComponent<BulletController>().damage = 3;
+            break;
         }
     }
 }
